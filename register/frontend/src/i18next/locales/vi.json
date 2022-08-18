@@ -1,0 +1,145 @@
+{
+    "sidebar": {
+        "home": "Trang chủ",
+        "schedule": "Thời Khóa Biểu",
+        "schedule week": "Thời Khóa Biểu Tuần",
+        "storage": "Lưu trữ",
+        "manage": "Quản Lý",    
+        "setting": "Cài đặt",
+        "help": "Giúp đỡ",
+        "support": "Hỗ trợ"
+    },
+    "homepage": {
+        "header": {
+            "home": "Trang chủ",
+            "about": "Về chúng tôi",
+            "login": "Đăng nhập",
+            "signup": "Đăng ký"
+        },
+        "home": {
+            "title": "Sắp xếp thời khóa biểu cho riêng mình",
+            "support": "Chúng tôi hỗ trợ:",
+            "content": "Ở trang web của chúng tôi, bạn có thể tự sắp xếp thời khóa biểu cho riêng mình với những gợi ý tốt nhất cũng như những dịch vụ thuận tiện nhất mà chúng tôi có thể mang đến cho bạn.",
+            "start": "Bắt đầu"
+        },
+        "about": [
+            {
+                "name": "Huỳnh Ngọc Vy",
+                "faculty": "Khoa học máy tính",
+                "student": "K25 - Đại học Tôn Đức Thắng"
+            },
+            {
+                "name": "Đặng Quốc Lộc",
+                "faculty": "Khoa học máy tính",
+                "student": "K25 - Đại học Tôn Đức Thắng"
+            },
+            {
+                "name": "Đinh Ngọc Thủy Tiên",
+                "faculty": "Kỹ thuật phần mềm",
+                "student": "K25 - Đại học Tôn Đức Thắng"
+            }
+        ]
+    },
+    "signin": {
+        "login": {
+            "title": "Đăng nhập",
+            "content": "Chào mừng trở lại! Vui lòng nhập thông tin chi tiết của bạn",
+            "email": "Địa chỉ email",
+            "password": "Mật khẩu",
+            "login": "Đăng nhập",
+            "signup": "Đăng ký",
+            "loginGg": "Đăng nhập với Google",
+            "account":"Bạn không có tài khoản?"
+        },
+        "signup": {
+            "title": "Tạo tài khoản mới",
+            "content": "Hey, vui lòng nhập thông tin của bạn để đăng ký tài khoản",
+            "username": "Tên tài khoản",
+            "email": "Địa chỉ email",
+            "password": "Mật khẩu",
+            "login": "Đăng nhập",
+            "signup": "Đăng ký",
+            "signupGg": "Đăng ký với Google",
+            "account":"Đã có tài khoản?"
+        }
+    },
+    "schedule": {
+        "createTimetable": {
+            "title": "Tạo thời khóa biểu",
+            "trainning": "Hệ đào tạo",
+            "faculty":"Khoa",
+            "chooseSubject": "Chọn môn học",
+            "subject": "Môn học",
+            "add": "Thêm",
+            "find": "Tìm",
+            "cancel": "Hủy",
+            "create": "Tạo"
+        },
+        "sorted" : {
+            "showAll": "Tất cả",
+            "title": "Có {{number}} thời khóa biểu",
+            "recent": "Gần đây"
+        },
+        "similar": {
+            "title": "Thời khóa biểu thay thế",
+            "guide":"Hãy chọn vào các môn học mà bạn muốn thay thế"
+        },
+        "functionButtons": {
+            "create": "Tạo thời khóa biểu mới",
+            "result": "Xem kết quả",
+            "mark": "Đánh dấu",
+            "storage": "Lưu vào thư viện",
+            "download": "Tải xuống",
+            "share": "Chia sẻ"
+        }
+    },
+    "scheduleWeek": {
+        "buttons": {
+            "addTask": "Thêm hoạt động",
+            "lastWeek": "Tuần trước",
+            "nextWeek": "Tuần sau"
+        },
+        "createTask": {
+            "title": "Tạo hoạt động",
+            "inputTitle": "Tiêu đề",
+            "date": "Ngày",
+            "start": "Bắt đầu",
+            "end": "Kết thúc",
+            "reminder": "Nhắc nhở",
+            "color": "Màu sắc",
+            "desc": "Mô tả",
+            "cancel": "Hủy",
+            "create": "Tạo"
+        }
+    },
+    "script": {
+        "mark": "Nhấn để đánh dấu đây là Thời khóa biểu chính.",
+        "storage": "Nhấn vào đây để lưu trữ Thời khóa biểu này vào Kho của bạn.",
+        "download": "Nhấn vào đây để tải Thời khóa biểu này về thiết bị của bạn.",
+        "share": "Nhấn vào đây để chia sẻ Thời khóa biểu này với người khác."
+    },
+    "calendar": {
+        "shiftDay": "Tiết | Thứ",
+        "timeDay": "Buổi | Thứ",
+        "mon": "Thứ 2",
+        "tue": "Thứ 3",
+        "web": "Thứ 4",
+        "thu": "Thứ 5",
+        "fri": "Thứ 6",
+        "sat": "Thứ 7",
+        "sun": "Chủ nhật"
+    },
+    "remind" : {
+        "storage": "Bạn hiện tại chưa có thời có thời khóa biểu lưu trong Kho lưu trữ. Hãy tạo ngay bây giờ."
+    },
+    "notify": {
+        "title": "Thông báo",
+        "remind": "Không có thông báo"
+    },
+    "tour": [
+        "hihi",
+        "haha",
+        "hehe",
+        "hohoh"
+    ]
+}

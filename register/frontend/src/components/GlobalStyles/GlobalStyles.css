@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #325ae7;
+    --linear-color: linear-gradient(to bottom,#ffa330,#ff9346,#ff8559,#fb7a6a,#f07379);
+    --linear-button-color: linear-gradient(180deg,#5690FF 0,#3271E6 100%);
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.sidebar__container:hover .sidebar__element {
+  display: block;
+}
+.sidebar__container:hover .support {
+  font-size: 14px;
+  text-align: left;
+}
+.dropdown_sidebar {
+  display: none;
+}
+.sidebar__element {
+  margin-left: 20px;
+  display: none;
+}
+.support {
+  font-size: 10px;
+  text-align: center;
+}
+.react-toggle.react-toggle--checked .react-toggle-track{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    background: #303136;
+}
+.react-toggle--checked :hover .react-toggle-track {
+    background-color: var(--primary-text-color);
+}
+.react-toggle.react-toggle--checked .react-toggle-thumb {
+    border: 1px solid #fff;
+}
+.react-toggle-track-check {
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+.react-toggle-track-x {
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+
+
+.text-shadow {
+    text-shadow: 5px 5px rgb(69 106 235 / 30%);
+    /* font-family: 'Baloo Tamma', cursive; */
+    text-shadow: 0 13.36px 8.896px rgb(69 106 235 / 30%),0 -2px 1px #fff;
+}
+.daterange__container {
+  position: fixed;
+  right: 0;
+}
+/* table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+} */
+/* .subject__container .subject__modal,
+.subject__container:hover .subject__element {
+    display: none;
+}
+.subject__container:hover .subject__modal {
+    display: block;
+} */
+.subject__container:hover .subject__modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 4px;
+    z-index: 100;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  .rdrMonth {
+    width: 270px !important;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--linear-button-color); 
+    border-radius: 15px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color); 
+  }
+  .scale-up-hor-right {
+    -webkit-animation: scale-up-hor-right 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: scale-up-hor-right 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  @-webkit-keyframes scale-up-hor-right {
+    0% {
+      -webkit-transform: scaleX(0.4);
+              transform: scaleX(0.4);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+    }
+  }
+  @keyframes scale-up-hor-right {
+    0% {
+      -webkit-transform: scaleX(0.4);
+              transform: scaleX(0.4);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+    }
+  }
+  
+  .scale-up-ver-bottom {
+    -webkit-animation: scale-up-ver-bottom 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: scale-up-ver-bottom 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  @-webkit-keyframes scale-up-ver-bottom {
+    0% {
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+    }
+  }
+  @keyframes scale-up-ver-bottom {
+    0% {
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+    }
+  }
+  .scale-up-tr {
+    -webkit-animation: scale-up-tr 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: scale-up-tr 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  @-webkit-keyframes scale-up-tr {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+  }
+  @keyframes scale-up-tr {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+  }
+  
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

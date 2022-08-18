@@ -1,0 +1,145 @@
+{
+    "sidebar": {
+        "home": "Home",
+        "schedule": "Schedule",
+        "schedule week": "Schedule Week",
+        "storage": "Storage",
+        "manage": "Manage",
+        "setting": "Setting",
+        "help": "Help",
+        "support": "Support"
+    },
+    "homepage": {
+        "header": {
+            "home": "Home",
+            "about": "About",
+            "login": "Log In",
+            "signup": "Register"
+        },
+        "home": {
+            "title": "Have and arrange your own schedule",
+            "support": "What we support:",
+            "content": "At our website, you can arrange your own schedule with our best suggestions, also our convenient services",
+            "start": "Get start"
+        },
+        "about": [
+            {
+                "name": "Huynh Ngoc Vy",
+                "faculty": "Computer Science",
+                "student": "K25 - Ton Duc Thang University"
+            },
+            {
+                "name": "Dang Quoc Loc",
+                "faculty": "Computer Science",
+                "student": "K25 - Ton Duc Thang University"
+            },
+            {
+                "name": "Dinh Ngoc Thuy Tien",
+                "faculty": "Software Technology",
+                "student": "K25 - Ton Duc Thang University"
+            }
+        ]
+    },
+    "signin": {
+        "login": {
+            "title": "Log in",
+            "content": "Welcome back! Please enter your details",
+            "email": "Email address",
+            "password": "Password",
+            "login": "Log in",
+            "signup": "Sign up",
+            "loginGg": "Log in with Google",
+            "account":"Doesn't have an account?"
+        },
+        "signup": {
+            "title": "Create new account",
+            "content": "Hey, Enter your details to get sign up to your account",
+            "username": "Username",
+            "email": "Email address",
+            "password": "Password",
+            "signup": "Sign up",
+            "login": "Log in",
+            "signupGg": "Sign up with Google",
+            "account":"Aldready have an account?"
+        }
+    },
+    "schedule": {
+        "createTimetable": {
+            "title": "Create a Schedule",
+            "trainning": "Training-system",
+            "faculty":"Faculty",
+            "chooseSubject": "Choose Subject",
+            "subject": "Subject",
+            "add": "Add",
+            "find": "Find",
+            "cancel": "Cancel",
+            "create": "Create"
+        },
+        "sorted" : {
+            "showAll": "All",
+            "title": "There are {{number}} timetables",
+            "recent": "Recent"
+        },
+        "similar": {
+            "title": "Alternative schedule",
+            "guide":"Please select the subjects you want to replace it"
+        },
+        "functionButtons": {
+            "create": "Create a new timetable",
+            "result": "See result",
+            "mark": "Mark",
+            "storage": "Save to storage",
+            "download": "Download",
+            "share": "Share"
+        }
+    },
+    "scheduleWeek": {
+        "buttons": {
+            "addTask": "Thêm hoạt động",
+            "lastWeek": "Tuần trước",
+            "nextWeek": "Tuần sau"
+        },
+        "createTask": {
+            "title": "Create a Task",
+            "inputTitle": "Title",
+            "date": "Date",
+            "start": "Start",
+            "end": "End",
+            "reminder": "Reminder",
+            "color": "Color",
+            "desc": "Decription",
+            "cancel": "Cancel",
+            "create": "Create"
+        }
+    },
+    "script": {
+        "mark": "Click here to mark this Timetable as the main one",
+        "storage": "Click here to store this Timetable in your Storage.",
+        "download": "Click here to download this Timetable to your device.",
+        "share": "Click here to share this Timetable with others."
+    },
+    "calendar": {
+        "shiftDay": "Shift | Day",
+        "timeDay": "Time | Day",
+        "mon": "MON",
+        "tue": "TUE",
+        "web": "WEB",
+        "thu": "THU",
+        "fri": "FRI",
+        "sat": "SAT",
+        "sun": "SUN"
+    },
+    "remind" : {
+        "storage": "You currently don't have any timetables in Storage. Let's create it now"
+    },
+    "notify": {
+        "title": "Notifications",
+        "remind": "There is no notification "
+    },
+    "tour": [
+        "hihi",
+        "haha",
+        "hehe",
+        "hohoh"
+    ]
+}
