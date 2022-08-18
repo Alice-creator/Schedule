@@ -4,7 +4,6 @@ import moment from 'moment'
 import axios from 'axios'
 import ModalTimetable from '../../../../ModalTimetable'
 import { TbTrash } from 'react-icons/tb'
-import { handleReminder } from '../../../../../algorithm/handleReminder'
 import { t } from 'i18next'
 
 const NotifyHeader = ({ user }) => {
@@ -58,7 +57,7 @@ const NotifyHeader = ({ user }) => {
                 <div className='absolute -top-4 -right-2 bg-red-600 text-white text-center rounded-full text-lg w-7 h-w-7'>{notifications.length}</div>
             )}
             {isNotify &&
-                <div className='scale-up-tr rounded-xl overflow-hidden py-6 px-4 flex flex-col bg-notify shadow border-sm border-slate-200 w-xl h-xl z-50 absolute top-11 right-0'>
+                <div className='scale-up-tr rounded-xl overflow-hidden py-6 px-4 flex flex-col bg-notify shadow border-sm border-slate-200 w-xl h-xl overflow-x-hidden overflow-y-auto z-50 absolute top-11 right-0'>
                     <div className='flex justify-between'>
                         <h2 className='text-2xl mb-4 font-semibold text-black'>{t("notify.title")}</h2>
                         <div className='text-black cursor-pointer'
@@ -76,7 +75,7 @@ const NotifyHeader = ({ user }) => {
                         >
                             <div className='p-2'>
                                 <div className='text-lg flex mb-1'>
-                                    <p className='text-slate-700'> <b clasName="text-black">{value.name}</b> {value.content}</p>
+                                    <p className='text-slate-700'> <b className="text-black">{value.name}</b> {value.content}</p>
                                 </div>
                                 <div className='text-lg italic text-gray-400'>{moment(value.time).startOf('ss').fromNow()}</div>
                             </div>

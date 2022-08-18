@@ -1,3 +1,4 @@
+import { t } from 'i18next';
 import React, { useContext, useState } from 'react'
 import Modal from 'react-modal';
 import { SubjectContext } from '../../../../../components/GlobalStates/SubjectsContext';
@@ -12,17 +13,16 @@ import { AddShare } from '../../../../../services/SubjectApi';
 const ModalShare = ({ isShare, setIsShare }) => {
   const { user } = useContext(UserContext)
   const { chooseSorted } = useContext(SubjectContext)
-  console.log(chooseSorted, "share");
   const [ change, setChange ] = useState('')
   const handleSend = async (e) => {
     e.preventDefault()
     const value = {
       name: user.name,
-      content: 'shared a timetable for you',
+      content: t("notify.share"),
       timetable: chooseSorted,
       time: new Date()
     }
-    console.log(change, value, "share");
+    
     if(change.length > 0 ) {
       const data = await AddShare(change, value)
     }

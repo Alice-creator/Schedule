@@ -1,6 +1,4 @@
 import axios from "axios"
-import { useCookies } from "react-cookie"
-import React from 'react'
 
 export const AuthRegister = async (user) => {
     const config = {

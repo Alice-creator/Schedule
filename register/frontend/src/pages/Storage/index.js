@@ -5,7 +5,6 @@ import DefaultLayout from '../../components/Layout/DefaultLayout'
 import { handleTableStorage } from '../../algorithm/handleTableStorage'
 
 import { TbTrash } from 'react-icons/tb'
-import { IoIosEye } from 'react-icons/io'
 import Preview from "../../assets/preview.png"
 import ModalTimetable from '../../components/ModalTimetable'
 import { t } from 'i18next'
@@ -39,7 +38,6 @@ const Storage = () => {
       })
     }
   }, [storage])
-  console.log(storage);
   const handleTimetable = (value) => {
     setChooseStorage(value)
     setModalTimeTable(true)

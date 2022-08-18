@@ -29,9 +29,6 @@ const Header = () => {
             <NavLink to="/about" className={({ isActive }) => isActive ? 'mr-7 font-semibold text-primary text-3xl' : 'mr-7  transition duration-300 text-white hover:text-primary hover:font-semibold'}>
               <div className='flex items-center'> <IoMdPeople size={18} className='mr-3' /> {t("homepage.header.about")}</div>
             </NavLink>
-            <NavLink to="/algorithm" className={({ isActive }) => isActive ? 'mr-7 font-semibold text-primary text-3xl' : 'mr-7  transition duration-300 text-white hover:text-primary hover:font-semibold'}>
-              <div className='flex items-center'> <IoRocket size={18} className='mr-3' />Algorithm</div>
-            </NavLink>
           </div>
           <div className='flex items-center'>
             <div className='mr-5'>

@@ -7,11 +7,12 @@ import FunctionButtons from './FunctionButtons';
 import { t } from 'i18next';
 import { UserContext } from '../../../components/GlobalStates/UserContext';
 const Schedule = (props) => {
-    const { chooseSorted } = useContext(SubjectContext)
+    const { chooseSorted, setChooseSorted } = useContext(SubjectContext)
     const { listRegisterSubject } = useContext(UserContext)
   const handleCreate = () => {
     props.setCreateSchedule(true)
     props.setSeeResult(false)
+    setChooseSorted([])
   }
   const handleResult = () => {
     props.setSeeResult(true)

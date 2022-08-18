@@ -20,7 +20,6 @@ const HomePage = () => {
       <Routes>
         <Route index element={<Home />} />
         <Route path='about' element={<About />} />
-        <Route path='algorithm' element={<Algorithm />} />
       </Routes>
     </HomepageLayout>
   )

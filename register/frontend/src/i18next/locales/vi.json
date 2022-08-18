@@ -87,7 +87,7 @@
         "functionButtons": {
             "create": "Tạo thời khóa biểu mới",
             "result": "Xem kết quả",
-            "mark": "Đánh dấu",
+            "mark": "Thời khóa biểu chính",
             "storage": "Lưu vào thư viện",
             "download": "Tải xuống",
             "share": "Chia sẻ"
@@ -134,12 +134,20 @@
     },
     "notify": {
         "title": "Thông báo",
-        "remind": "Không có thông báo"
+        "remind": "Không có thông báo",
+        "share": "đã chia sẽ thời khóa biểu cho bạn",
+        "update": "Các môn học đã được cập nhật"
     },
     "tour": [
-        "hihi",
-        "haha",
-        "hehe",
-        "hohoh"
-    ]
+        "Nhấn vào đây để tạo thời khóa biểu mới",
+        "Chọn hệ đào tạo và khoa của bạn tại đây.",
+        "Chọn lần lượt từng môn học mà thuộc về khoa các bạn đã chọn ở bước 2, sau đó cuộn xuống và nhấn “Thêm” để hoàn tất thêm môn học đó cho Thời khóa biểu của bạn",
+        "Sau khi đã chọn tất cả các môn học, nhấn vào đây để hệ thống gợi ý các Thời khóa biểu cho bạn"
+    ],
+    "toast": {
+        "recent": "Thời khóa biểu đã thêm vào gần đây",
+        "mark": "Thời khóa biểu đã được chọn thời khóa biểu chính thức",
+        "storage": "Thời khóa biểu đã thêm vào kho lưu trữ"
+
+    }
 }

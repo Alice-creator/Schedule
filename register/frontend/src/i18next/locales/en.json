@@ -87,7 +87,7 @@
         "functionButtons": {
             "create": "Create a new timetable",
             "result": "See result",
-            "mark": "Mark",
+            "mark": "Main timetable",
             "storage": "Save to storage",
             "download": "Download",
             "share": "Share"
@@ -134,12 +134,19 @@
     },
     "notify": {
         "title": "Notifications",
-        "remind": "There is no notification "
+        "remind": "There is no notification",
+        "share": "shared a timetable for you",
+        "update": "Subjtects have been updated"
     },
     "tour": [
-        "hihi",
-        "haha",
-        "hehe",
-        "hohoh"
-    ]
+        "Click here to create new timetable",
+        "Choose your Training-system and your Faculty here",
+        "Click here to choose  one subject at a time, which belongs to specific falculty chosen in step 2, then scroll down and click “Add” to finish adding that subject to your timetable",
+        "After selecting all subjects, click here to finish creating multiple of suggested timetable for you"
+    ],
+    "toast": {
+        "recent": "The subject has been added Recent",
+        "mark": "The timetable has been added Main Timetable",
+        "storage": "The timetable has been successfully added Storage"
+    }
 }

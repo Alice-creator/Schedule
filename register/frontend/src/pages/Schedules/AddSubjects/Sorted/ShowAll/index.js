@@ -16,6 +16,7 @@ import { t } from 'i18next'
 const ShowAll = ({ listRegisterSubject}) => {
   const { sorted, setSorted, chooseSorted, setChooseSorted } = useContext(SubjectContext)
   const { setLoading } = useContext(ExtensionsContext)
+  
   useEffect(() => {
     if(listRegisterSubject.length > 0 ) {
       setLoading(true)
@@ -78,7 +79,8 @@ const ShowAll = ({ listRegisterSubject}) => {
 
   const handleChooseSorted = (value) => {
     setChooseSorted(value)
-    toast.success("The subject has been added recently");
+    toast.success(t("toast.recent"));
+
   }
   console.log(sorted, "đa ");
   return (

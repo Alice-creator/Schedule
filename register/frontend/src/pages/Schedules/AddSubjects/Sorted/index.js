@@ -16,7 +16,6 @@ const Sorted = ({ listRegisterSubject }) => {
   // useEffect(() => {
   //   console.log(recentlyArr.current, "hahdhda");
   // }, [recentlyArr])
-  console.log("sao nó k ra nhở");
   return (
     <div>
       <div className='flex my-2 mx-4  text-2xl items-center'>

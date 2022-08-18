@@ -33,33 +33,41 @@ export const handleDeleteSubject = (deleted, list, setGroupSubjects, setDeletedS
      * @param {Array} list mảng chứa nhóm 1 môn học
      * @returns mảng đã được sắp xếp theo cấu trúc [lí thuyết, thực hành, ...]
      */
-    function Arrange(list)
-    {
-        let Group = []
-        let RS = []
 
-        for(let i = 0; i < 1000; i++)
-        {
-            Group.push([])
-        }
-    
-        for(let i = 0; i < list.length; i++)
-        {
-            if(list[i]["sub-group"] == "") {
-                Group[parseInt(list[i]["group"])].splice(0, 0, list[i])
-            }
-            else {
-                
-                Group[parseInt(list[i]["group"])].push(list[i])
-            }
-        }
-
-        for(let i = 0; i < 1000; i++)
-        {
-            RS = RS.concat(Group[i])
-        }
-        return RS
-    }
+     function Arrange(list)
+     {
+         let Group = []
+         let RS = new Array()
+         for(let i = 0; i < 1000; i++)
+         {
+             Group.push([])
+         }
+     
+         for(let i in list)
+         {
+             if(list[i]["sub-group"] == "" && Group[parseInt(list[i]["group"])][0] !== "")
+             {
+                 Group[parseInt(list[i]["group"])].splice(0, 0, list[i])
+             }
+             else
+             {
+                 Group[parseInt(list[i]["group"])].push(list[i])
+             }
+         }
+     
+         for(let i of Group)
+         {
+             for(let j in i)
+                 {
+                     if(j != 0)
+                         i[j]["sub-group"] = "0" + j
+                 }
+                 RS = RS.concat(i)
+         }
+     
+         return RS
+     }
+     
     
     /**
      * thêm thuộc tính lí thuyết vào cho các môn học

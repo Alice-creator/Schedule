@@ -1,8 +1,7 @@
-import React, { useContext, useState } from 'react'
+import React, { useState } from 'react'
 import SignInLayout from '../../../components/Layout/SignInLayout'
 import BgSignIn from "../../../assets/BgSignIn.png"
 import GoogleLogin from 'react-google-login'
-import axios from "axios"
 import { FcGoogle } from 'react-icons/fc'
 import { Link, useNavigate } from 'react-router-dom'
 import { AuthRegister } from '../../../services/AuthApi'
@@ -48,7 +47,7 @@ const SignUp = () => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        if(checkIsValidField(user) === true && checkIsValidPassword(user.password) === true ) {
+        if(checkIsValidField(user) == true && checkIsValidPassword(user.password) == true ) {
             AuthRegister(user)
             negative("/login", { replace : true })
         } else if(checkIsValidField(user) !== true ) {

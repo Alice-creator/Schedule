@@ -35,30 +35,37 @@ export const handleSort = (array, setSorted) => {
     function Arrange(list)
     {
         let Group = []
-        let RS = []
-        for(let i = 0; i < 100; i++)
+        let RS = new Array()
+        for(let i = 0; i < 1000; i++)
         {
             Group.push([])
         }
 
-        for(let i = 0; i < list.length; i++)
+        for(let i in list)
         {
-            if(list[i]["sub-group"] == "")
+            if(list[i]["sub-group"] == "" && Group[parseInt(list[i]["group"])][0] !== "")
             {
                 Group[parseInt(list[i]["group"])].splice(0, 0, list[i])
             }
             else
-                {
+            {
+                Group[parseInt(list[i]["group"])].push(list[i])
+            }
+        }
 
-                    Group[parseInt(list[i]["group"])].push(list[i])
-                }
-        }
-        for(let i = 0; i < 100; i++)
+        for(let i of Group)
         {
-            RS = RS.concat(Group[i])
+            for(let j in i)
+                {
+                    if(j != 0)
+                        i[j]["sub-group"] = "0" + j
+                }
+                RS = RS.concat(i)
         }
+
         return RS
     }
+
 
     function THLT(list)
     { 

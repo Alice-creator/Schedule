@@ -5,6 +5,7 @@ import DataTable from 'react-data-table-component';
 import axios from 'axios';
 import { SubjectContext } from '../../../components/GlobalStates/SubjectsContext';
 import { AddData, AddNotifyAll } from '../../../services/SubjectApi';
+import { t } from 'i18next';
 
 const Manage = () => {
     const [columns, setColumns] = useState([]);
@@ -69,8 +70,8 @@ const Manage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         const notitfy = {
-          name: 'Yeeep',
-          content: 'Subjtects have been updated',
+          name: 'Admin',
+          content: t("notify.update"),
           time: new Date()
         }
         // const config = {

@@ -27,14 +27,14 @@ const FunctionButtons = ({ value, notify }) => {
         const dataStorage = await AddStorge(user.email, value)
 
         window.location.reload()
-        toast.success('The timetable has been successfully added Favourite')
+        toast.success(t("toast.mark"))
         setLoading(false)
       }
       const handleStorage = async (e) => {
         e.preventDefault()
         const dataStorage = await AddStorge(user.email, value)
 
-        toast.success('The timetable has been successfully added to Storage')
+        toast.success(t("toast.storage"))
     }
 
         

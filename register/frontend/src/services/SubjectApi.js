@@ -1,6 +1,4 @@
 import axios from "axios"
-import { useCookies } from "react-cookie"
-import React from 'react'
 
 export const AddData = async (value) => {
     const config = {

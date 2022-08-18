@@ -66,7 +66,6 @@ const AddSubjects = ({createSchedule, seeResult, setCreateSchedule, setSeeResult
     setSeeResult(false)
     setChooseSorted([])
   }
-  console.log(sorted)
   const handleFind = () => {
     setSimilarTimetable(mostSuitableSchedule(sorted, chooseSorted, chooseDelete))
 
@@ -83,7 +82,7 @@ const AddSubjects = ({createSchedule, seeResult, setCreateSchedule, setSeeResult
   // {event.name == 'ListSubject' && <ListSubject listRegisterSubject={listRegisterSubject}  /> }
   return (
     <div className='w-base lg:w-xl md:w-lg mt-16'>
-      <div className='transition-all duration-1000 flex justify-between w-full relative h-2xl text-black flex-col bg-blue-200 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-2xl'>
+      <div className='flex justify-between transition-opacity-custom duration-1000 w-full relative h-2xl text-black flex-col bg-blue-200 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-2xl'>
         <div className='flex-auto h-9/10  overflow-y-auto overflow-x-hidden '>
           {createSchedule && <ChooseSubjects /> }
           {seeResult && event.name =='Sorted' && <Sorted listRegisterSubject={listRegisterSubject} /> }
@@ -116,7 +115,7 @@ const AddSubjects = ({createSchedule, seeResult, setCreateSchedule, setSeeResult
                 <button className='bg-primary ml-4 px-5 py-2 text-xl tracking-wider rounded-lg border-2 border-black' onClick={handleFind}>{t("schedule.createTimetable.find")}</button>
               }
               {createSchedule &&
-                <button className='bg-primary ml-4 px-5 py-2 text-xl tracking-wider rounded-lg border-2 border-black' onClick={handleSubmitRegister}>{t("schedule.createTimetable.create")}</button>
+                <button data-tut="fourth-step" className='bg-primary ml-4 px-5 py-2 text-xl tracking-wider rounded-lg border-2 border-black' onClick={handleSubmitRegister}>{t("schedule.createTimetable.create")}</button>
               }
             </div>
         </div>

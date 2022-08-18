@@ -66,6 +66,7 @@ const Schedules = () => {
           rounded={10}
           showNavigationNumber={true}
           getCurrentStep={handleStep}
+          updateDelay={10}
         />
       </div>
     </DefaultLayout>
